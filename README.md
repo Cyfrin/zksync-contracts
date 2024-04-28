@@ -18,7 +18,7 @@ forge install cyfrin/zksync-contracts --no-commit
 
 ```
 remappings = [
-  '@matterlabs/zksync-contracts/=lib/zksync-contracts/',
+  '@matterlabs/zksync-contracts/=lib/zksync-contracts/zksync-contracts/',
 ]
 ```
 
