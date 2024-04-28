@@ -23,7 +23,7 @@ jobs:
         id: get_updated
         run: |
           yarn upgrade --latest
-          cp -r node_modules/@matterlabs/zksync-contracts/* contracts-ccip/
+          cp -r node_modules/@matterlabs/zksync-contracts/* zksync-contracts/
           jq '.dependencies."@matterlabs/zksync-contracts"' package.json | sed 's/"//g' | sed 's/\^//g' > version.txt
           version=$(cat version.txt)
           echo "::set-output name=version::${version}"
